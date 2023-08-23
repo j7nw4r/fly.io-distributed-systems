@@ -8,7 +8,7 @@ impl Node {
         Self
     }
 
-    pub fn handle(
+    pub async fn handle(
         &self,
         msg_type: message::Type,
         _callable: &dyn FnOnce(message::Msg) -> Result<(), Error>,
