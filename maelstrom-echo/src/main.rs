@@ -7,7 +7,7 @@ async fn main() -> anyhow::Result<()> {
     node.handle(Type::Echo, &callable).await
 }
 
-fn callable(msg: maelstrom::Msg) -> Result<(), maelstrom::Error> {
+fn callable(_msg: maelstrom::Msg) -> Result<(), maelstrom::Error> {
     // let body: Result<_, serde_json::Error> = serde_json::from_slice(_msg.)
     Ok(())
 }
